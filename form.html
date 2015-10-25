@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Sedona</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+<nav class="menu">
+    <div class="menu__close">
+    </div>
+    <div class="menu__menu-item">
+        <a class="menu__menu-link" href="#">КАРТА ШТАТА</a>
+    </div>
+    <div class="menu__menu-item">
+        <a class="menu__menu-link" href="#">ИНФОРМАЦИЯ</a>
+    </div>
+    <div class="menu__menu-item">
+        <a class="menu__menu-link" href="#">ФОТО И ВИДЕО</a>
+    </div>
+    <div class="menu__menu-item">
+        <a class="menu__menu-link" href="#">ГОСТИНИЦЫ</a>
+    </div>
+</nav>
+<header class="header">
+    <div class="menu-burger"></div>
+    <div class="header__logo"></div>
+</header>
+<main class="form-main">
+<div class="review-request">
+    <p class="review-request__title">
+        Оставьте свой отзыв
+    </p>
+
+    <p class="review-request__desc">
+        Помогите нашим отелям стать лучше!
+    </p>
+
+    <p class="review-request__desc">
+        Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+    </p>
+</div>
+<div class="review">
+<form class="review__form">
+<section class="review__item">
+    <h2 class="review__item-title">
+        Представьтесь, пожалуйста
+    </h2>
+
+    <div class="input-username">
+        <p class="input-text">
+            <label for="last-name">
+                <span>Фамилия:</span>
+                <span class="required">*</span>
+            </label>
+            <input type="text" id="last-name" name="last-name" placeholder="Иванов" required/>
+        </p>
+
+        <p class="input-text">
+            <label for="first-name">
+                <span>Имя:</span>
+            </label>
+            <input type="text" id="first-name" name="first-name" placeholder="Петр"/>
+        </p>
+
+        <p class="input-text">
+            <label for="middle-name">
+                <span>Отчество:</span>
+            </label>
+            <input type="text" id="middle-name" name="middle-name" placeholder="Александрович"/>
+        </p>
+    </div>
+</section>
+<section class="review__item">
+    <h2 class="review__item-title">
+        Ваше общее впечатление:
+    </h2>
+    <fieldset class="input-radio">
+        <ul>
+            <li>
+                <label for="impression-positive">
+                    <input type="radio" id="impression-positive" name="impression"
+                           value="positive"/>
+                    Скорее положительное
+                </label>
+            </li>
+            <li>
+                <label for="impression-negative">
+                    <input type="radio" id="impression-negative" name="impression"
+                           value="negative"/>
+                    Скорее отрицательное
+                </label>
+            </li>
+        </ul>
+    </fieldset>
+</section>
+<section class="review__item">
+    <h2 class="review__item-title">
+        Даты вашей поездки:
+    </h2>
+
+    <p class="input-date">
+        <label for="start-date">
+            <span>Дата приезда:</span>
+            <span class="required">*</span>
+        </label>
+        <input type="date" id="start-date" name="start-date" placeholder="4 июля 2015" required/>
+    </p>
+
+    <div class="input-counter">
+        <label for="duration">
+            <span>Длительность пребывания:</span>
+        </label>
+
+        <div class="input-counter__minus"></div>
+        <div class="input-counter__number">
+            <input type="number" id="duration" name="duration" placeholder="14" required/>
+            <span>дн.</span>
+        </div>
+        <div class="input-counter__plus"></div>
+    </div>
+
+    <p class="input-date">
+        <label for="finish-date">
+            <span>Дата отъезда:</span>
+            <span class="required">*</span>
+        </label>
+        <input type="date" id="finish-date" name="finish-date" placeholder="28 июля 2015" required/>
+    </p>
+
+</section>
+<section class="review__item">
+    <h2 class="review__item-title">
+        Кол-во путешественников:
+    </h2>
+
+    <div class="input-counter">
+        <label for="travelers-count">
+            <span>Количество путешественников:</span>
+            <span class="required">*</span>
+        </label>
+
+        <div class="input-counter__minus"></div>
+        <div class="input-counter__number">
+            <input type="number" id="travelers-count" name="travelers-count" placeholder="2" required/>
+            <span>чел.</span>
+        </div>
+        <div class="input-counter__plus"></div>
+    </div>
+
+    <div class="input-multiple-users">
+        <div class="input-multiple-users__item">
+            <div class="input-multiple-users__number-block">
+                <p class="input-multiple-users__sign">
+                    №
+                </p>
+
+                <p class="input-multiple-users__number">
+                    1
+                </p>
+            </div>
+            <div class="input-multiple-users__data-block">
+                <p class="input-text">
+                    <label for="last-name-1">
+                        <span>Фамилия:</span>
+                        <span class="required">*</span>
+                    </label>
+                    <input type="text" id="last-name-1" name="last-name-1" placeholder="Иванов" required/>
+                </p>
+
+                <p class="input-text">
+                    <label for="first-name-1">
+                        <span>Имя:</span>
+                    </label>
+                    <input type="text" id="first-name-1" name="first-name-1" placeholder="Петр"/>
+                </p>
+
+                <p class="input-text">
+                    <label for="middle-name-1">
+                        <span>Отчество:</span>
+                    </label>
+                    <input type="text" id="middle-name-1" name="middle-name-1" placeholder="Александрович"/>
+                </p>
+            </div>
+        </div>
+        <div class="input-multiple-users__item">
+            <div class="input-multiple-users__number-block">
+                <p class="input-multiple-users__sign">
+                    №
+                </p>
+
+                <p class="input-multiple-users__number">
+                    2
+                </p>
+            </div>
+            <div class="input-multiple-users__data-block">
+                <p class="input-text">
+                    <label for="last-name-2">
+                        <span>Фамилия:</span>
+                        <span class="required">*</span>
+                    </label>
+                    <input type="text" id="last-name-2" name="last-name-2" placeholder="Иванов" required/>
+                </p>
+
+                <p class="input-text">
+                    <label for="first-name-2">
+                        <span>Имя:</span>
+                    </label>
+                    <input type="text" id="first-name-2" name="first-name-2" placeholder="Петр"/>
+                </p>
+
+                <p class="input-text">
+                    <label for="middle-name-2">
+                        <span>Отчество:</span>
+                    </label>
+                    <input type="text" id="middle-name-2" name="middle-name-2" placeholder="Александрович"/>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="review__item">
+    <h2 class="review__item-title">
+        Посещенные достопримечательности:
+    </h2>
+
+    <fieldset class="input-checkbox">
+        <ul>
+            <li>
+                <label for="devils-bridge">
+                    <input type="checkbox" id="devils-bridge" name="sights"
+                           value="devils-bridge"/>
+                    Мост Дьявола
+                </label>
+            </li>
+            <li>
+                <label for="slide-park">
+                    <input type="checkbox" id="slide-park" name="sights"
+                           value="slide-park"/>
+                    Слайд-парк
+                </label>
+            </li>
+            <li>
+                <label for="bell-mountain">
+                    <input type="checkbox" id="bell-mountain" name="sights"
+                           value="bell-mountain"/>
+                    Гора-Колокол
+                </label>
+            </li>
+            <li>
+                <label for="red-rocks">
+                    <input type="checkbox" id="red-rocks" name="sights"
+                           value="red-rocks"/>
+                    Красные скалы
+                </label>
+            </li>
+        </ul>
+    </fieldset>
+
+</section>
+<section class="review__item">
+    <h2 class="review__item-title">
+        Загрузите фотографии:
+    </h2>
+
+    <div class="input-images">
+        <div class="input-images__wrapper">
+            <label for="input-image">Выбрать фотографии</label>
+            <input id="input-image" placeholder="Выбрать фотографии" type="file" accept="image/*"/>
+        </div>
+        <div class="input-images__preview">
+            <ul>
+                <li class="input-images__preview-item">
+                    <div class="input-images__delete-item">
+                    </div>
+                    <img src="" alt="Image Preview"/>
+                </li>
+                <li class="input-images__preview-item">
+                    <div class="input-images__delete-item">
+                    </div>
+                    <img src="" alt="Image Preview"/>
+                </li>
+                <li class="input-images__preview-item">
+                    <div class="input-images__delete-item">
+                    </div>
+                    <img src="" alt="Image Preview"/>
+                </li>
+                <li class="input-images__preview-item">
+                    <div class="input-images__delete-item">
+                    </div>
+                    <img src="" alt="Image Preview"/>
+                </li>
+                <li class="input-images__preview-item">
+                    <div class="input-images__delete-item">
+                    </div>
+                    <img src="" alt="Image Preview"/>
+                </li>
+                <li class="input-images__preview-item">
+                    <div class="input-images__delete-item">
+                    </div>
+                    <img src="" alt="Image Preview"/>
+                </li>
+                <li class="input-images__preview-item">
+                    <div class="input-images__delete-item">
+                    </div>
+                    <img src="" alt="Image Preview"/>
+                </li>
+                <li class="input-images__preview-item">
+                    <div class="input-images__delete-item">
+                    </div>
+                    <img src="" alt="Image Preview"/>
+                </li>
+                <li class="input-images__preview-item">
+                    <div class="input-images__delete-item">
+                    </div>
+                    <img src="" alt="Image Preview"/>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<div class="review__submit">
+    <input type="submit" value="Отправить отзыв"/>
+</div>
+</form>
+</div>
+</main>
+
+
+<footer class="footer">
+    <p class="footer__hashtag">
+        #VISITSEDONA
+    </p>
+
+    <div class="social-links">
+        <div class="social-links__item social-links__item--twitter">
+
+        </div>
+        <div class="social-links__item social-links__item--facebook">
+
+        </div>
+        <div class="social-links__item social-links__item--youtube">
+
+        </div>
+    </div>
+    <p class="footer__created-by">
+        <span>Разработано</span>
+        <span class="footer__created-by footer__created-by--icon"></span>
+    </p>
+</footer>
+
+<!-- <script src="js/script.js"></script> -->
+
+</body>
+</html>
