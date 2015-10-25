@@ -1,15 +1,189 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>HTML Academy: sedona</title>
+    <title>HTML Academy: Sedona</title>
     <!-- <link rel="stylesheet" href="css/style.css"> -->
-  </head>
-  <body>
+</head>
+<body>
+<nav class="menu">
+    <div class="menu__close">
+    </div>
+    <div class="menu__menu-item">
+        <a class="menu__menu-link" href="#">КАРТА ШТАТА</a>
+    </div>
+    <div class="menu__menu-item">
+        <a class="menu__menu-link" href="#">ИНФОРМАЦИЯ</a>
+    </div>
+    <div class="menu__menu-item">
+        <a class="menu__menu-link" href="#">ФОТО И ВИДЕО</a>
+    </div>
+    <div class="menu__menu-item">
+        <a class="menu__menu-link" href="#">ГОСТИНИЦЫ</a>
+    </div>
+</nav>
+<header class="header">
+    <div class="menu-burger"></div>
+    <div class="header__logo"></div>
+</header>
+<main class="index-main">
+    <div class="intro">
+        <div class="intro__welcome">
+            <h2>WELCOME</h2>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн-курсе «<a href="https://htmlacademy.ru/advanced_intensive">Продвинутый HTML и CSS</a>».</p>
+            <h3>--- to the gorgeous ---</h3>
+        </div>
+        <div class="intro__title">
+            <h1>SEDONA</h1>
+        </div>
+        <div class="intro__motto">
+            <h2>
+                "Because the Grand Canyon sucks!"
+            </h2>
+        </div>
+    </div>
+    <div class="promo">
 
-    <!-- <script src="js/script.js"></script> -->
+        <p class="promo__title">
+            Седона - небольшой городок в Аризоне, заслуживающий большего!
+        </p>
 
-  </body>
+        <p class="promo__subtitle">
+            Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон
+        </p>
+    </div>
+    <div class="reasons-wrapper">
+        <ul class="reasons">
+            <li class="reasons__item reasons__item--highlighted">
+                <div class="reasons__item-title">
+                    <p>Настоящий городок</p>
+                </div>
+                <div class="reasons__item-number">
+                    <p>- №1 -</p>
+                </div>
+                <div class="reasons__item-desc">
+                    <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+                </div>
+                <div class="reasons__item-img">
+                    <img src="#" alt="Sedona City Image"/>
+                </div>
+                <ul class="reasons__item-details">
+                    <li>
+                        <p class="reasons__item-details-title">
+                            Жилье
+                        </p>
+
+                        <p class="reasons__item-details-desc">
+                            Рекомендуем пожить в настоящем мотеле, все как в кино!
+                        </p>
+                    </li>
+                    <li>
+                        <p class="reasons__item-details-title">
+                            Сувениры
+                        </p>
+
+                        <p class="reasons__item-details-desc">
+                            Не только китайского, но и местного производства!
+                        </p>
+                    </li>
+                    <li>
+                        <p class="reasons__item-details-title">
+                            Еда
+                        </p>
+
+                        <p class="reasons__item-details-desc">
+                            Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li class="reasons__item reasons__item--highlighted">
+                <div class="reasons__item-title">
+                    <p>Там есть мост дьявола</p>
+                </div>
+                <div class="reasons__item-number">
+                    <p>- №2 -</p>
+                </div>
+                <div class="reasons__item-description">
+                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                </div>
+                <div class="reasons__item-img">
+                    <img src="#" alt="Sedona Devils Bridge"/>
+                </div>
+            </li>
+            <li class="reasons__item">
+                <div class="reasons__item-title">
+                    <p>Небольшая площадь</p>
+                </div>
+                <div class="reasons__item-number">
+                    <p>- №3 -</p>
+                </div>
+                <div class="reasons__item-description">
+                    <p>Все достопримечатльности находятся очень близко</p>
+                </div>
+            </li>
+            <li class="reasons__item">
+                <div class="reasons__item-title">
+                    <p>Красивая дорога</p>
+                </div>
+                <div class="reasons__item-number">
+                    <p>- №4 -</p>
+                </div>
+                <div class="reasons__item-description">
+                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
+            </li>
+            <li class="reasons__item">
+                <div class="reasons__item-title">
+                    <p>Мало туристов</p>
+                </div>
+                <div class="reasons__item-number">
+                    <p>- №5 -</p>
+                </div>
+                <div class="reasons__item-description">
+                    <p>Большинство едет в Гранд Каньон и толпится там</p>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <div class="search-hotel">
+        <p class="search-hotel__title">
+            Заинтересовались?
+        </p>
+
+        <p class="search-hotel__desc">
+            Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+
+        <div class="search-hotel__btn">
+            <a href="#">Найти гостиницу</a>
+        </div>
+    </div>
+    <div class="map">
+        <!-- Sedona map inserted by Google Maps -->
+    </div>
+</main>
+<footer class="footer">
+    <p class="footer__hashtag">
+        #VISITSEDONA
+    </p>
+
+    <div class="social-links">
+        <div class="social-links__item social-links__item--twitter">
+
+        </div>
+        <div class="social-links__item social-links__item--facebook">
+
+        </div>
+        <div class="social-links__item social-links__item--youtube">
+
+        </div>
+    </div>
+    <p class="footer__created-by">
+        <span>Разработано</span>
+        <span class="footer__created-by footer__created-by--icon"></span>
+    </p>
+</footer>
+</body>
 </html>
