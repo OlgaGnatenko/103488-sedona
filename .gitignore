@@ -6,3 +6,6 @@ prepros.cfg
 *.sublime*
 *.map
 css/*.css
+*.xml
+.idea/103488-sedona.iml
+*.name
